@@ -1,0 +1,4 @@
+main.o: main.c defs.h util.h net.h
+net.o: net.c defs.h
+util.o: util.c util.h defs.h
+util_test.o: util_test.c util.h defs.h

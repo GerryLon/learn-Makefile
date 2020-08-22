@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pattern demo</title>
+
+	<link rel="stylesheet" type="text/css" href="common.min.css">
+	<link rel="stylesheet" type="text/css" href="index.min.css">
+</head>
+<body>
+	<div class="container" id="main">
+	</div>
+
+	<script type="text/javascript">
+		var oContainer = document.getElementById("main");
+		var html = `<ol style="list-style-type:decimal-leading-zero">`;
+		var languages = ["C", "Java", "Rust", "Python", "Go", "javascript"];
+
+		for (var i = 0; i < languages.length; i++) {
+			html += `<li>${languages[i]}</li>`
+		}
+		html += `</ol>`
+		var oDiv = document.createElement("div");
+		oDiv.innerHTML = html;
+
+		oContainer.append(oDiv)
+	</script>
+</body>
+</html>
